@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Assets">
+      <UniqueIdentifier>00fbcad2-78ae-4f2b-afbc-487b6d01a025</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dds;dlg;fbx;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{ce3c7412-bdbd-47bc-8aef-d76dd57bc8a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\System">
+      <UniqueIdentifier>{61ea0918-e207-4df3-a7db-15a8d24cd97b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShaderFile">
+      <UniqueIdentifier>{9fb7eae3-f613-4113-9533-935984dbd69c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Figure">
+      <UniqueIdentifier>{c8229a3f-6262-47b6-8f43-3bc4bae7c0f4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="StepTimer.h" />
+    <ClInclude Include="Classes\Constant.h">
+      <Filter>Classes\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Shader.h">
+      <Filter>Classes\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\SingletonDirector.h">
+      <Filter>Classes\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\Figure.h">
+      <Filter>Classes\Figure</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\PointFigure.h">
+      <Filter>Classes\Figure</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\DXTKManager.h">
+      <Filter>Classes\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\LineFigure.h">
+      <Filter>Classes\Figure</Filter>
+    </ClInclude>
+    <ClInclude Include="Classes\TriangleFigure.h">
+      <Filter>Classes\Figure</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Classes\Shader.cpp">
+      <Filter>Classes\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\PointFigure.cpp">
+      <Filter>Classes\Figure</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\Figure.cpp">
+      <Filter>Classes\Figure</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\LineFigure.cpp">
+      <Filter>Classes\Figure</Filter>
+    </ClCompile>
+    <ClCompile Include="Classes\TriangleFigure.cpp">
+      <Filter>Classes\Figure</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="directx.ico">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="settings.manifest">
+      <Filter>Assets</Filter>
+    </Manifest>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="ShaderFile\LineShader.hlsl">
+      <Filter>ShaderFile</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderFile\PointShader.hlsl">
+      <Filter>ShaderFile</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderFile\TriangleShader.hlsl">
+      <Filter>ShaderFile</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderFile\QuadShader.hlsl">
+      <Filter>ShaderFile</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>
